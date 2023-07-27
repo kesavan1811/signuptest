@@ -54,10 +54,10 @@ const register = async (req, res, next) => {
 
 const verifyOtp = async (req, res, next) => {
   const otp = req.body.otp;
-  const phone = req.body.phone;
+  const email = req.body.email;
 
   const user = await User.findOne({
-    phone
+    email
   });
 
   if (user && user.otp !== otp) {
