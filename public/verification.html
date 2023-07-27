@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <form
+      action="/register/verify"
+      method="post"
+      style="border: 1px solid #ccc; display: flex; justify-content: center"
+    >
+      <div class="container">
+        <h1>Verification Page</h1>
+        <hr />
+
+        <label for="phone"><b>Phone Number</b></label>
+        <input
+          type="text"
+          placeholder="Enter phone number"
+          name="phone"
+          required
+        />
+        <label for="otp"><b>OTP</b></label>
+        <input type="text" placeholder="Enter otp" name="otp" required />
+
+        <div class="clearfix">
+          <button type="submit" class="signupbtn">Submit</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
